@@ -4,8 +4,8 @@ import 'firebase/firestore'
 // Get a Firestore instance
 export const db = firebase
     .initializeApp({
-        apiKey: 'AIzaSyAtQOwI15iG_K7xVJtobSdCbewe0wvM4KU',
-        projectId: 'thanxgod-skin'
+        apiKey: process.env.VUE_APP_API_KEY,
+        projectId: process.env.VUE_APP_PROJECT_NAME
     })
     .firestore()
 
